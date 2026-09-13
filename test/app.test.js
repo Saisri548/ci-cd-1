@@ -23,4 +23,11 @@ describe("Task Manager API", () => {
         expect(Array.isArray(response.body)).toBe(true);
     });
 
+    test("GET /health should return JSON", async () => {
+        const response = await request(app)
+            .get("/health");
+
+        expect(response.headers["content-type"]).toMatch(/json/);
+    });
+
 });

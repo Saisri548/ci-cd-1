@@ -4,15 +4,16 @@ const app = require("../app");
 describe("Task Manager API", () => {
 
     test("GET /health should return healthy status", async () => {
-        const response = await request(app)
-            .get("/health");
+    const response = await request(app)
+        .get("/health");
 
-        expect(response.statusCode).toBe(200);
+    expect(response.statusCode).toBe(200);
 
-        expect(response.body).toEqual({
-            status: "healthy"
-        });
+    expect(response.body).toEqual({
+        status: "healthy",
+        version: "1.1"
     });
+});
 
     test("GET /api/tasks should return tasks", async () => {
         const response = await request(app)

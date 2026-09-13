@@ -22,9 +22,7 @@ app.get("/api/tasks", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    res.json({
-        status: "healthy"
-    });
+    res.json({ status: "healthy", version: "1.1" });
 });
 
 app.post("/api/tasks", (req, res) => {

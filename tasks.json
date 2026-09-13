@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Linux",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "title": "Build CI/CD Pipeline",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "title": "Learn Argocicd",
+    "completed": true
+  }
+]
